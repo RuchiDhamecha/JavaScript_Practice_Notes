@@ -1,1 +1,1 @@
-console.log(e);
+Map(3) { 1 => 'one', 2 => 'two', 3 => 'three' } 

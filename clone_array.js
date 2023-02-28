@@ -5,8 +5,8 @@ let arr2=arr1;
 //to check if both the arrays are same
 console.log(arr1===arr2); //true
 
-///so if we do this , then if 1 operation is performed on 1 array it will afect another too. so 
-//betterway make new array copy all ellemnts into that then perform operation so it will not afect previos  , for that lets learn clonning
+///so if we do this , then if 1 operation is performed on 1 array it will affect another too. so 
+//better way make new array copy all elements into that then perform operation so it will not affect previous  , for that lets learn cloning
 
  
 let arr3 = [1,2];
