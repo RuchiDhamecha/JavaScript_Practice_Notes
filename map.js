@@ -8,12 +8,27 @@
 // in map u can use anything as a key
 
 const person = new Map();
-//set keyword
+//set keyword= adds new value in map
+
+// key value in map can be anything like string, number,object,array,etc
+
 person.set('fname','ruchi');
 person.set('age',20);
+person.set({1:'one'},"subject");
+person.set(1,20);
+person.set([1,2,3],'numbers');
 
 console.log(person);
-//Map(2) { 'fname' => 'ruchi', 'age' => 20 }
+//Map(5) {
+//     'fname' => 'ruchi',
+//     'age' => 20,
+//     { '1': 'one' } => 'subject',
+//     1 => 20,
+//     [ 1, 2, 3 ] => 'numbers'
+//   }
+
+
+//to access value by key use 'get'
 console.log(person.get('fname'));  //ruchi
 console.log(person.keys());  //[Map Iterator] { 'fname', 'age' }
 
