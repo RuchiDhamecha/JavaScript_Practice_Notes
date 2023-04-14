@@ -38,7 +38,7 @@ function printFullName(firstName, lastName){
 // so here local variables for the printName are
 // firstName and lastName
 
-const ans = printFullName("Nayan", "Sayaji");
+const ans = printFullName("Ruchi", "Dhamecha");
 // this ans will have the function printName with the parameters of it's parent function
 console.log(ans);
 ans();

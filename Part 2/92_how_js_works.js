@@ -4,13 +4,13 @@
  
 // compilation
 //  compilation has 3 phases / stages
-// 1] tokenizing / lexing : breakes code in small chunks and those chunks are known as tokens
+// 1] tokenizing / lexing : breaks code in small chunks and those chunks are known as tokens
 
 // 2] parsing : understands the small chucks / tokens and creates AST - abstract syntax tree
 
 // 3] code generation
 
-// in officail doc of ecma script it's not mention that the js needs compilation 
+// in official doc of ecma script it's not mention that the js needs compilation 
 // but they have mentioned that pre error checking is important
 // compilation phase is imp for
 // 1) early error checking..
@@ -75,7 +75,7 @@
 // or function execution context
 // closures
 
-console.log(this);
+ console.log(this);
 console.log(window);
 console.log(firstName);
-var firstName = "Nayan";
+var firstName = "Ruchi";

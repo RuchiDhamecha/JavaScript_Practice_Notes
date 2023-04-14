@@ -33,8 +33,8 @@ function myFunction() {
 // those are stored inside creation phase with value undefined at the 
 // starting phase of global execution context
 
-var firstName = "nayan";
-var lastName = "sayaji";
+var firstName = "Ruchi";
+var lastName = "Dhamecha";
 var fullName = firstName + " " + lastName;
 console.log(fullName);
 
@@ -62,8 +62,8 @@ console.log(lastname);
 
 // ReferenceError: Cannot access 'firstname' before initialization
 // when we will try to access them before intialization
-let firstname = "nayan";
-const lastname = "sayaji";
+let firstname = "ruchi";
+const lastname = "dhamecha";
 
 
 // There is a term called tdz

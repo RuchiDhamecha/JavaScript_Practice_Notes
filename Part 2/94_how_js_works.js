@@ -28,7 +28,7 @@
 // line which called the function is executed.
 eg,
 function myFunc(){
-    let name = "nayan";
+    let name = "ruchi";
     console.log(name);
 }
 

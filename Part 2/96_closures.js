@@ -1,4 +1,4 @@
-
+//closure
 
 function myFunc(power) {
     return function(number) {
