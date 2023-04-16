@@ -1,7 +1,6 @@
 // DOM relationships 
 // getRootNode
 // htmlElementNode.childNodes = returns a NodeList[]
-// 
 
 
 // const rootNode = document.getRootNode();

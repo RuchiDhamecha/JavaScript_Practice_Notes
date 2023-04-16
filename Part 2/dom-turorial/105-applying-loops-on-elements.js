@@ -37,7 +37,7 @@
 
 // querySelectorAll
 let navItems = document.querySelectorAll("a");
-console.log(navItems); // it gives a nodeList same as HMTLCollection
+console.log(navItems); // it gives a nodeList same as HTMLCollection
 
 // we can use forEach method as well in querySelectorAll to iterate through HTMLCollection 
 // simple for loop

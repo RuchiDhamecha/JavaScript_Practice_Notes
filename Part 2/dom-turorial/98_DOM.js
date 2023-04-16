@@ -3,8 +3,8 @@
 // overview
 // how to use 
 
-// a object named "document" is present in the window object
-// which haves the information about the html document.. 
+// an object named "document" is present in the window object
+// which have the information about the html document.. 
 // all the html elements are kept inside that document object..
 
 
