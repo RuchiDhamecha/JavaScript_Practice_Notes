@@ -13,9 +13,12 @@
 // todoList.appendChild(newTodoItem); // appendChild is old
 // todoList.append(newTodoItem); // append add in  last
 
+//***prepend vs append==========
+// prepend writes in starting while append starts writing after last word
+
 // todoList.prepend(newTodoItem); // prepend add in  last
 
-// how to remove element
+// ***how to remove element=======s
 // const todo1 = document.querySelector('.todo-list li');
 // todo1.remove(); 
 // console.log(todo1);
