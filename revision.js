@@ -129,9 +129,17 @@ var p3 = p2.then(function(data){
     })
 })
 
-p3.then(function(data){
+var p4 = p3.then(function(data){
     console.log(data);
     return new Promise(function(res,rej){
         return res("do homework")
     })
 })
+
+var p5 =p4.then(function(data){
+    console.log(data);
+    return new Promise(function(res,rej){
+        return res("sleep")
+    })
+})
+//such examples can be used when 1st we need to load logo then heading etc
