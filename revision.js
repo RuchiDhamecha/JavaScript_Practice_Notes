@@ -143,3 +143,33 @@ var p5 =p4.then(function(data){
     })
 })
 //such examples can be used when 1st we need to load logo then heading etc
+
+// async await ===========================================================
+
+// if we r writing promises in async code , we will have to use .then 
+// for not using then we can use async await
+
+// code without async await
+function abc(){
+    fetch(`https://randomuser.me/api/`)
+    .then(function(raw){
+        return raw.json();  //.json will convert raw data from api into readable formate
+    })
+    .then(function(data){
+        console.log(data);  //gives real data
+    });
+}
+
+abc(); //calling function//
+//output .. gives random data of api
+
+
+//using async await we can write same code as
+async function abc(){
+    let raw = await fetch(`https://randomuser.me/api/`) //wait till it fetches raw data from api
+
+    let ans = await raw.json();  //wait till raw file gets value then convert it into json
+    console.log(ans);  //print final ans
+}
+
+abc();  //calling function
