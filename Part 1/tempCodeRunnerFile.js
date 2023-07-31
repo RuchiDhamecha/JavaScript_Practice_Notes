@@ -1,4 +1,4 @@
-const userMethods = {
+//const userMethods = {
 //     about: function () {
 //         return `${this.firstName} is ${this.age} years old.`;
 //     },

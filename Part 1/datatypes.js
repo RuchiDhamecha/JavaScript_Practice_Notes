@@ -10,6 +10,7 @@
 //   a= 3;
 
 let age =20;
+
 age= 21;
 
 let num = 2;

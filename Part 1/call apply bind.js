@@ -56,7 +56,7 @@ const user2 = {
 }
 
 // calling it for user2 object
-about.call(user2, "reading","atif aslam");
+//about.call(user2, "reading","atif aslam");
 // ruchi 20 reading atif aslam
 
 
@@ -95,7 +95,7 @@ const myFunc = user.about; // we haven't called this method we just stored the r
 myFunc(); // undefined undefined
 // this is happening bcoz the this keyword which we have mentioned in about method is having the value of window object... 
 // this --> Window {window: Window, self: Window, document: document, name: '', location: Location, …}
-// bcoz when we call the function that time we know the value of this keyword........ means which is objeect is the value of this keyword.
+// bcoz when we call the function that time we know the value of this keyword........ means which is object is the value of this keyword.
 
 // but here we are just storing the reference inside myFunc that's why it's giving undefined undefined
 
