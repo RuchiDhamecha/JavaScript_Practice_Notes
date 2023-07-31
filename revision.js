@@ -34,6 +34,10 @@ console.log("helloo");
 //i.e after completion of  given time in setTimeout, it will start executing function(callback) inside settimeout
 
 
+// CONCURRENCY ==============================================================
+
+// in js both sync n async codes processes simultanously that is called as concurrency
+
 //main stack == gives output
 //side stack == does processing behind the scenes, after completion of process can be added to main stack
 //**event loop == transfers operations from side stack to main stack
@@ -58,6 +62,16 @@ console.log("helloo");
 //not a multi threaded though it performs tasks simultaneously
 //it gives mili sec of time ti 1st process and other ms time to another process and keeps shifting from 1 process to another until it gets executed completely.
 
+
+// PARALLELISM ==>
+//  focuses on processoes n their difeerent core (ex. octacore) to work on.
+
+
+//Throttling ==>
+//used to call a function after every millisecond or a particular interval of time only the first click is executed immediately in that area
+//ex.
+// if we r moving moving in staright line,  it will count all the small areas it went through but throttling limits some time(ex. 20ms) so that only necessary points will be counted
+// it can decrease the no, of function calls
 
 //========= promises ====================================
 // if condition is true can resolve else can reject
