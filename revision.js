@@ -58,6 +58,26 @@ console.log("helloo");
 //because as it is asynchronous code it is in side stack,
 //all other codes were in main stack so it executed 1st, later it checked side stack , the process was executed already so event loop took it to main stack and gave output.
 
+
+setTimeout(() => {
+    console.log("Joel");
+    setTimeout(() => {
+        console.log("Victoria");
+        setTimeout(() => {
+            console.log("John");
+            setTimeout(() => {
+                console.log("Doe");
+                setTimeout(() => {
+                    console.log("Sarah");
+                }, 2000);
+            }, 2000);
+        }, 2000);
+    }, 2000);
+}, 2000);
+// This above example will work, but it will be difficult to comprehend, debug, or even add error handling to. This is referred to as"Callback Hell".  Callback hell is a big issue caused by coding with complex nested callbacks.
+
+// The primary reason for using promises is to prevent callback hell. With Promises, we may write asynchronous code in a synchronous manner.
+
 //javascript is single threaded
 //not a multi threaded though it performs tasks simultaneously
 //it gives mili sec of time ti 1st process and other ms time to another process and keeps shifting from 1 process to another until it gets executed completely.
@@ -73,8 +93,26 @@ console.log("helloo");
 // if we r moving moving in staright line,  it will count all the small areas it went through but throttling limits some time(ex. 20ms) so that only necessary points will be counted
 // it can decrease the no, of function calls
 
-//========= promises ====================================
+
+
+
+//========= promises =============================================================
+
+
 // if condition is true can resolve else can reject
+// There are 3 states of the Promise object:
+
+// Pending: by default, this is the Initial State, before the Promise succeeds or fails.
+// Resolved: Completed Promise
+// Rejected: Failed Promise
+
+// JavaScript promise syntax:
+
+const myPromise = new Promise((resolve, reject) => {  
+    // condition
+});
+
+//example
 var ans = new Promise((res,rej)=>{
     if(true){
         return res();
@@ -157,6 +195,30 @@ var p5 =p4.then(function(data){
     })
 })
 //such examples can be used when 1st we need to load logo then heading etc
+
+
+//Finally, let's try to re-implement the callback hell as a promise:
+
+function addName (time, name){
+  return new Promise ((resolve, reject) => {
+    if(name){
+      setTimeout(()=>{
+        console.log(name)
+        resolve();
+      },time)
+    }else{
+      reject('No such name');
+    }
+  })
+}
+
+addName(2000, 'Joel')
+  .then(()=>addName(2000, 'Victoria'))
+  .then(()=>addName(2000, 'John'))
+  .then(()=>addName(2000, 'Doe'))
+  .then(()=>addName(2000, 'Sarah'))
+  .catch((err)=>console.log(err))
+
 
 // async await ===========================================================
 
