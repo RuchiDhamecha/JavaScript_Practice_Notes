@@ -38,3 +38,29 @@ try{
     console.log("theres a reference error")
 }
 console.log("my program does not stop");
+
+
+//example
+// if the typeof the a parameter is not equal to 'number', throw a new ReferenceError. Inside the ReferenceError, pass a custom error message of 'the first argument is not a number'.
+
+// else if the typeof the b parameter is not equal to 'number', throw a new ReferenceError. Inside the ReferenceError, pass a custom error message of 'the second argument is not a number'.
+
+// else, console log a + b  
+// Inside the catch block, update the code from console.log(err) to console.log("Error!", err).
+
+function addTwoNums(a,b){
+    try{
+        if(typeof a === "number"){
+            throw new ReferenceError('the first argument is not a number');
+        }
+        if(typeof b === "number"){
+            throw new ReferenceError('the second argument is not a number');
+        }
+        else console.log (a + b ) 
+
+    }catch(err){
+        console.log("error!",err)
+        }
+}
+addTwoNums(5,"5")
+console.log ("It still works")
