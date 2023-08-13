@@ -18,4 +18,7 @@ console.log(obj.colour)  //due to spell mistake it becomes different key value
 console.log(obj.font);  //undefined as font not declared
 
 // empty =============================================================
-
+//empty string
+//example
+let cat = ""
+var str = ''
