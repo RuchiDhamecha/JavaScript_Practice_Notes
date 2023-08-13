@@ -85,6 +85,8 @@ console.log("datatype of var1: "+ typeof +var1);
 num3 = Number(num3);
 console.log(typeof num3);
 
+//******************************** */
+//if(a>b) //datatype of a>b is boolean..anything we write in if for in condition block of loops as well is bool
 
 // concatination of string
 
