@@ -31,3 +31,10 @@ console.log("my program doesnt stop")
 
 
 //now if we dont knw where err will occur but knw reference error can occur we can use..
+try{
+    throw new ReferenceError();
+} catch(err){
+    console.log(err)
+    console.log("theres a reference error")
+}
+console.log("my program does not stop");
