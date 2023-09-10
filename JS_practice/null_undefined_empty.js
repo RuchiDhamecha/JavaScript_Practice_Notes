@@ -21,4 +21,3 @@ console.log(obj.font);  //undefined as font not declared
 //empty string
 //example
 let cat = ""
-var str = ''
