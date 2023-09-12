@@ -5,15 +5,17 @@
 </head>
 <body>
     <h1>Contact Us</h1>
+    <br>
     <form action="app.js" method="post">
         <div>Name: <input type="text" name = "username" id ="name" placeholder="enter ur full name" required></div>
+        <br>
 
         <div>Email: <input type="email" name="mail" id="email" required></div>
-
+        <br>
         <div>Message: <textarea name="usermessage" id="message" cols="10" rows="4"></textarea></div>
-
+        <br>
         <div>Age: <input type="number" name="usernumber" id="number"> </div>
-
+        <br>
         <div> Gender:
             <select>
                 <option value="">Choose One</option>
@@ -22,23 +24,23 @@
                 <option value="trans">Trans</option>
             </select>
         </div>
-
+        <br>
         <div>Date: <input type="date" name="date" id="date"> </div>
-
+        <br>
         <div>
             Frontend: <input type="checkbox" id="frontend" name="skills">
             backend: <input type="checkbox" id="backend" name="skills">
         </div>
-
+        <br>
         <fieldset>
             <legend>Mode of payment</legend>
             Cash: <input type="radio" name="payment">
             Bank: <input type="radio" name="payment">
             <!-- name shuld be same to get selected by 1 -->
         </fieldset>
-
+        <br>
         <div>Password: <input type="password" name="password" id="password"></div>
-
+        <br>
         <input type="submit" value="submit">
     </form>
 </body>
