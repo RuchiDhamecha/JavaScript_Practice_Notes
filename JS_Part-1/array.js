@@ -2,7 +2,7 @@
 //it is an object
 //any data types can be stored in an array
 
-//here we r using 'let' so we again delare same many times n can change
+//here we r using 'let' so we again declare same many times n can change
 
 
 let fruits=['apple','grapes','mango'];

@@ -1,0 +1,73 @@
+<!doctype html>
+	<head>
+		<style>
+			/* CSS comes here */
+			body {
+			    font-family:arial;
+			}
+			input {
+			    padding: 10px;
+			    width: 300px;
+			    border-radius: 5px;
+			    border: solid 2px #BBB;
+			}
+			div {
+			    margin:10px 0px;
+			}
+			button {
+			    padding:10px;
+			    background-color:#6a67ce;
+			    color: #FFFFFF;
+			    border: 0px;
+			    cursor:pointer;
+			    border-radius: 5px;
+			}
+		</style>
+		<title>Pure JavaScript Text to Audio</title>
+	</head>
+	<body>
+	    <h2>JavaScript Text to Speech</h2>
+		<div><input type="text" id="text-to-speech" placeholder="Enter text to speak..."/></div>
+        <div><button type="button" onclick="textToAudio()">Speak</button></div>
+        <br/>
+        <div><small><b>NOTE:</b> Enter text and click on speak button.</small></div>
+		<script>
+			/* JS comes here */
+            function textToAudio() {
+                let msg = document.getElementById("text-to-speech").value;
+                
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "en-IN";
+                
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 3;
+                
+                window.speechSynthesis.speak(speech);
+            }
+		</script>
+	</body>
+</html>
+
+<!-- In the Web Speech API, we can convert:
+
+Text-to-Speech using SpeechSynthesis
+Speech-to-Text using SpeechRecognition
+We will be using the following two interfaces to convert text to speech:
+
+SpeechSynthesisUtterance has data of what text to be spoken and how it should be spoken(speed, pitch, lang, and voice).
+SpeechSynthesis can be used to retrieve information about voices available on the device, start and pause speech, etc.
+Properties in SpeechSynthesisUtterance
+lang: the language of the output.
+pitch: sets a pitch(the relative highness or lowness of a tone) for the output spoken words. It has a range from 0 to 2.
+rate: the speed at which the text is spoken. rate ranges from 0.1 to 10.
+text: The text to be spoken.
+voice: which voice to be used to speak.
+volume: The output volume. It ranges from 0 to 1.
+Methods in SpeechSynthesis
+speak: to start speaking the text
+getVoices: get the available voices in the system.
+pause: pause the speech
+resume: resume the speech
+cancel: cancel the speech -->
