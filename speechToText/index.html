@@ -18,7 +18,7 @@
             var action = document.getElementById('action');
             let recognization = new webkitSpeechRecognition();
             recognization.onstart = () => {
-               action.innerHTML = "Listening...";
+               action.innerHTML = "Listening....";
             }
             recognization.onresult = (e) => {
                var transcript = e.results[0][0].transcript;
